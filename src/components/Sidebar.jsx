@@ -3,6 +3,7 @@ import Typical from 'react-typical';
 import useScrollPosition from '../hook/useScrollPosition';
 import { Transition } from '@headlessui/react';
 import avata from '../assets/img/avta.png';
+import cv from '../assets/img/cv.png';
 
 const Sidebar = () => {
     const [isView, setIsView] = React.useState(false);
@@ -58,6 +59,13 @@ const Sidebar = () => {
                     </a>
                     <a target="_blank" href="https://github.com/khanhandli">
                         <i className="fa-brands fa-github cursor-pointer hover:opacity-90 text-[20px]"></i>
+                    </a>
+                    <a
+                        target="_blank"
+                        className="ml-3 mb-1"
+                        href="https://www.topcv.vn/xem-cv/VVFTAA0AAQYEWQZVAVkPUAUGVwUBDVpTBQQCWQa65c"
+                    >
+                        <img src={cv} alt="cv" className="cursor-pointer hover:opacity-90 w-[20px]" />
                     </a>
                 </div>
                 <div className="flex items-center mt-4">
