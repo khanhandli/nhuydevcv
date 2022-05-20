@@ -10,12 +10,18 @@ import admin from '../assets/img/admin.png';
 import lava from '../assets/img/lava.png';
 import tax from '../assets/img/tax.png';
 import family from '../assets/img/family.png';
+import doc from '../assets/img/doc.png';
+import cococlient from '../assets/img/cococlient.png';
+import cocoserver from '../assets/img/cocoserver.png';
+import docmobile from '../assets/img/docmb.png';
 import { Flipper, Flipped, spring } from 'react-flip-toolkit';
+import { Image } from 'antd';
 
 const data = [
     {
         id: 1,
         title: 'Shopping MERN Stack Version 1',
+        link: 'https://shopcnpm.herokuapp.com',
         category: 'Personal project',
         img: ecommercev1,
     },
@@ -24,12 +30,14 @@ const data = [
         id: 5,
         title: 'Shopping MERN Stack Version 2',
         category: 'Personal project',
+        link: '#',
         img: ecommercev2,
     },
     {
         id: 2,
         title: 'Vina Case',
         category: 'Company project',
+        link: 'https://demo.vinacase.vn',
         img: vinacase,
     },
 
@@ -37,43 +45,78 @@ const data = [
         id: 6,
         title: 'Mobile Vina Case',
         category: 'Company project',
+        link: '#',
         img: vinamb,
     },
     {
         id: 7,
         title: 'Blog App TypeScript',
         category: 'Personal project',
+        link: 'https://nhuydev.tk',
         img: blog,
     },
     {
         id: 8,
         title: 'Desktop App Meddom',
         category: 'Company project',
+        link: '#',
         img: meddom,
     },
     {
         id: 9,
         title: 'Admin Dashboard',
         category: 'Personal project',
+        link: 'https://nhuydev.cf',
         img: admin,
     },
     {
         id: 10,
         title: 'Chat App Lava',
         category: 'Company project',
+        link: 'https://app.lava.net.vn',
         img: lava,
     },
     {
         id: 11,
         title: 'Vina Case Tax',
         category: 'Company project',
+        link: 'https://tax.vinaseco.vn',
         img: tax,
     },
     {
         id: 12,
         title: 'App Family Tree',
         category: 'Company project',
+        link: '#',
         img: family,
+    },
+    {
+        id: 13,
+        title: 'Vina Case Doc',
+        category: 'Company project',
+        link: 'https://doc.vinaseco.vn',
+        img: doc,
+    },
+    {
+        id: 14,
+        title: 'CoCoShop Client',
+        category: 'Personal project',
+        link: 'https://cocoshopclient.tk',
+        img: cococlient,
+    },
+    {
+        id: 15,
+        title: 'CoCoShop Server',
+        category: 'Personal project',
+        link: 'https://cocoshopserver.tk',
+        img: cocoserver,
+    },
+    {
+        id: 16,
+        title: 'Doc Mobile',
+        category: 'Company project',
+        link: '#',
+        img: docmobile,
     },
 ];
 const onElementAppear = (el, index) =>
@@ -128,14 +171,18 @@ const Card = (props) => {
                         <Flipped flipId={`${flipId}-content`} translate shouldFlip={shouldFlip} delayUntil={flipId}>
                             <div>
                                 <div className="flex justify-center w-[300px] h-[176px] overflow-hidden rounded-2xl shadow-xl">
-                                    <img
+                                    <Image
                                         className="w-[300px] h-[176px] rounded-2xl object-cover cursor-pointer transition-[transform] hover:scale-105"
                                         src={props.img}
                                         alt="props.img"
                                     />
                                 </div>
                                 <div className="mx-1">
-                                    <h3 className="text-lg mt-3">{props.title}</h3>
+                                    <h3 className="text-lg mt-3">
+                                        <a target="_blank" href={props.link}>
+                                            {props.title}
+                                        </a>
+                                    </h3>
                                     <p className="text-sm opacity-70">{props.category}</p>
                                 </div>
                             </div>
@@ -223,7 +270,7 @@ const Portfolio = () => {
                                 <ul className="grid grid-cols-2 2xl:grid-cols-3 gap-4">
                                     {[...data]
                                         .filter((d) => !filteredIds.includes(d.id))
-                                        .map(({ category, img, title, id }) => (
+                                        .map(({ category, img, link, title, id }) => (
                                             <Card
                                                 id={id}
                                                 title={title}
@@ -232,6 +279,7 @@ const Portfolio = () => {
                                                 stagger={['forward', 'reverse'].includes('forward')}
                                                 type="grid"
                                                 key={id}
+                                                link={link}
                                             />
                                         ))}
                                 </ul>
