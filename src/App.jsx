@@ -28,7 +28,7 @@ function App() {
             pointer-events-none inline-block h-[30px] w-[34px] rounded-full bg-white shadow-lg transform ring-0 transition ease-in-out duration-200`}
                 />
             </Switch> */}
-            <div className="container mx-auto py-40 px-[40px]">
+            <div className="container mx-auto py-40 px-2 xl:px-[40px]">
                 <RouterList />
             </div>
         </div>

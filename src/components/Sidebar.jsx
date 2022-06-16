@@ -9,6 +9,7 @@ const Sidebar = () => {
     const [isView, setIsView] = React.useState(false);
 
     React.useEffect(() => {
+        if (window.innerWidth < 1280) return;
         const updatePosition = () => {
             if (window.pageYOffset > 100) {
                 setIsView(true);
@@ -23,7 +24,7 @@ const Sidebar = () => {
 
     return (
         <div
-            className={`transition-[height] duration-200 ease-linear shadow-2xl rounded-2xl w-[320px] h-[500px] dark:bg-[#302C40] mx-auto ${
+            className={`transition-[height] duration-200 ease-linear shadow-2xl rounded-2xl mb-10 xl:mb-0 w-[320px] h-[500px] dark:bg-[#302C40] mx-auto ${
                 isView ? 'h-[600px] fixed top-10' : ''
             }`}
         >

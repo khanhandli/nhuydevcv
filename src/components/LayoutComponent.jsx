@@ -7,8 +7,8 @@ const LayoutComponent = ({ children }) => {
     const { pathname } = useLocation();
 
     return (
-        <div className="flex flex-row">
-            <div className="w-[320px]">
+        <div className="flex xl:flex-row flex-col ">
+            <div className="w-full xl:w-[320px]">
                 <Sidebar />
             </div>
             <div className="flex-1 opacity shadow-2xl rounded-2xl dark:bg-[#302C40] ml-[40px] mr-[26px] p-[40px] relative">

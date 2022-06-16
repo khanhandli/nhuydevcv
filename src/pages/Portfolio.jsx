@@ -14,6 +14,8 @@ import doc from '../assets/img/doc.png';
 import cococlient from '../assets/img/cococlient.png';
 import cocoserver from '../assets/img/cocoserver.png';
 import docmobile from '../assets/img/docmb.png';
+import nongsan from '../assets/img/nongsan.png';
+import nongsanmb from '../assets/img/nongsanmb.png';
 import { Flipper, Flipped, spring } from 'react-flip-toolkit';
 import { Image } from 'antd';
 
@@ -117,6 +119,20 @@ const data = [
         category: 'Company project',
         link: '#',
         img: docmobile,
+    },
+    {
+        id: 17,
+        title: 'Shop Nông Sản',
+        category: 'Personal project',
+        link: 'thuyhang.cf',
+        img: nongsan,
+    },
+    {
+        id: 18,
+        title: 'Shop Nông Sản Mobile',
+        category: 'Personal project',
+        link: '#',
+        img: nongsanmb,
     },
 ];
 const onElementAppear = (el, index) =>
