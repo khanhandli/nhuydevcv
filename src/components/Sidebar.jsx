@@ -55,10 +55,10 @@ const Sidebar = () => {
                     <a target="_blank" href="https://www.facebook.com/hamita12345">
                         <i className="fa-brands fa-facebook cursor-pointer hover:opacity-90 text-[20px]"></i>
                     </a>
-                    <a className="mx-3" target="_blank" href="https://www.youtube.com/channel/UCZcj8qMrUswqps9HLfZb1uQ">
+                    <a className="mx-3" target="_blank" href="https://www.youtube.com/@nguyennhuy3912">
                         <i className="fa-brands fa-youtube cursor-pointer hover:opacity-90 text-[20px]"></i>
                     </a>
-                    <a target="_blank" href="https://github.com/khanhandli">
+                    <a target="_blank" href="https://github.com/nhuydev1704">
                         <i className="fa-brands fa-github cursor-pointer hover:opacity-90 text-[20px]"></i>
                     </a>
                     <a
@@ -87,7 +87,7 @@ const Sidebar = () => {
                         <i className="fa-solid fa-envelope"></i>
                     </div>
 
-                    <span className="ml-4">khanhandli@gmail.com</span>
+                    <span className="ml-4">nguyennhuy170400@gmail.com</span>
                 </div>
                 <div className="flex items-center mt-4">
                     <div className="w-[16px] flex justify-center">

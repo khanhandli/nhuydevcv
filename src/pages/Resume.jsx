@@ -5,6 +5,7 @@ import education from '../assets/img/education.svg';
 import experience from '../assets/img/experience.svg';
 import TimelineExperience from '../components/Resume/TimelineExperience';
 import ProgressBar from '../components/ProgressBar';
+import OtherTimelineSkill from '../components/Resume/OtherTimelineSkill';
 
 const Resume = () => {
     const [isRunProcess, setIsRunProcess] = React.useState(false);
@@ -23,10 +24,10 @@ const Resume = () => {
     }, []);
 
     const FEData = [
-        { bgcolor: '#0D86FF', completed: isRunProcess ? 85 : 0, language: isRunProcess ? 'HTML' : '' },
+        { bgcolor: '#0D86FF', completed: isRunProcess ? 90 : 0, language: isRunProcess ? 'HTML' : '' },
         { bgcolor: '#0D86FF', completed: isRunProcess ? 90 : 0, language: isRunProcess ? 'CSS' : '' },
-        { bgcolor: '#0D86FF', completed: isRunProcess ? 80 : 0, language: isRunProcess ? 'Javascript' : '' },
-        { bgcolor: '#0D86FF', completed: isRunProcess ? 80 : 0, language: isRunProcess ? 'ReactJS' : '' },
+        { bgcolor: '#0D86FF', completed: isRunProcess ? 90 : 0, language: isRunProcess ? 'Javascript' : '' },
+        { bgcolor: '#0D86FF', completed: isRunProcess ? 90 : 0, language: isRunProcess ? 'ReactJS' : '' },
     ];
 
     const BEData = [
@@ -64,6 +65,15 @@ const Resume = () => {
                             <span>Experience</span>
                         </h2>
                         <TimelineExperience />
+                    </div>
+                </div>
+                <div className="flex-1 mr-[20px]">
+                    <h2 className="flex items-center text-2xl font-bold mb-[14px] mt-[16px]">
+                        <img className="h-[40px] w-[40px] mr-4" src={experience} alt="experience" />
+                        <span>Other Skills</span>
+                    </h2>
+                    <div className="flex">
+                        <OtherTimelineSkill />
                     </div>
                 </div>
                 <div className="flex-1 mr-[20px]">

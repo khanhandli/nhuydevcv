@@ -16,10 +16,26 @@ import cocoserver from '../assets/img/cocoserver.png';
 import docmobile from '../assets/img/docmb.png';
 import nongsan from '../assets/img/nongsan.png';
 import nongsanmb from '../assets/img/nongsanmb.png';
+import base_fe from '../assets/img/base_fe.png';
+import windsoft from '../assets/img/windsoft.png';
 import { Flipper, Flipped, spring } from 'react-flip-toolkit';
 import { Image } from 'antd';
 
 const data = [
+    {
+        id: 19,
+        title: 'Build base frontend',
+        category: 'Company project',
+        link: '#',
+        img: base_fe,
+    },
+    {
+        id: 19,
+        title: '2 Project outsource',
+        category: 'Company project',
+        link: '#',
+        img: windsoft,
+    },
     {
         id: 1,
         title: 'Shopping MERN Stack Version 1',

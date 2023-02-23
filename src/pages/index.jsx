@@ -63,6 +63,10 @@ const HomePage = () => {
                 and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and
                 make sure that is eye-catching and easy to use.
             </div>
+            <div className="mt-4 opacity-90 text-[15px] animate-opacity1">
+                I have participated in and built nearly 30 small and medium projects, individuals and organizations. I
+                am completely confident that I can deploy a complete system without too much complexity on my own.
+            </div>
 
             <div>
                 <h3 className="text-2xl font-bold py-6 animate-title">What I'm Doing</h3>

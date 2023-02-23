@@ -58,6 +58,42 @@ const TimelineEducation = () => {
                     </p>
                 </div>
             </li>
+            <li className="mb-8 ml-4">
+                <div
+                    className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 dark:border-gray-900 dark:bg-[#0D86FF]"
+                    style={{ boxShadow: '0 0 0 0.1875rem rgb(13 134 255 / 25%)' }}
+                ></div>
+                <div className="animate-top15">
+                    <h3 className="relative -top-[5px] text-base font-semibold text-gray-900 dark:text-white">
+                        LEARN more at Social Media
+                    </h3>
+                    <time className="my-1 mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                        02/2021 - Now
+                    </time>
+
+                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                        I learn more things at different social networking sites.
+                    </p>
+                </div>
+            </li>
+            <li className="mb-8 ml-4">
+                <div
+                    className="absolute w-3 h-3 bg-gray-200 rounded-full -left-1.5 dark:border-gray-900 dark:bg-[#0D86FF]"
+                    style={{ boxShadow: '0 0 0 0.1875rem rgb(13 134 255 / 25%)' }}
+                ></div>
+                <div className="animate-top15">
+                    <h3 className="relative -top-[5px] text-base font-semibold text-gray-900 dark:text-white">
+                        Shoot videos on my Youtube channel
+                    </h3>
+                    <time className="my-1 mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                        02/2021 - Now
+                    </time>
+
+                    <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                        I learn more things at different social networking sites.
+                    </p>
+                </div>
+            </li>
         </ol>
     );
 };
